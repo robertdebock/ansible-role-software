@@ -15,7 +15,8 @@
       - item.name | length > 0
     quiet: yes
   loop: "{{ software_packages }}"
-  loop_control: "{{ item.name }}"
+  loop_control:
+    label: "{{ item.name }}"
   when:
     - software_packages is defined
 
@@ -25,7 +26,8 @@
       - item.state in ["present", "absent"]
     quiet: yes
   loop: "{{ software_packages }}"
-  loop_control: "{{ item.name }}"
+  loop_control:
+    label: "{{ item.name }}"
   when:
     - software_packages is defined
     - item.state is defined
