@@ -4,7 +4,7 @@ Install or uninstall software on your system.
 
 |Travis|GitHub|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-software.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-software)|[![github](https://github.com/robertdebock/ansible-role-software/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-software/actions)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/software)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/software)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-software.svg)](https://github.com/robertdebock/ansible-role-software/releases/)|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-software.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-software)|[![github](https://github.com/robertdebock/ansible-role-software/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-software/actions)|[![quality](https://img.shields.io/ansible/quality/51260)](https://galaxy.ansible.com/robertdebock/software)|[![downloads](https://img.shields.io/ansible/role/d/51260)](https://galaxy.ansible.com/robertdebock/software)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-software.svg)](https://github.com/robertdebock/ansible-role-software/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
