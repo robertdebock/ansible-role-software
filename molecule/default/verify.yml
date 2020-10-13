@@ -7,18 +7,18 @@
   roles:
     - role: ansible-role-software
       software_packages:
-        - name: screen
+        - name: nano
         - name: tcpdump
           state: absent
 
   post_tasks:
-    - name: check screen
+    - name: check nano
       package:
-        name: screen
+        name: nano
         state: present
-      register: software_check_screen
+      register: software_check_nano
       failed_when:
-        - software_check_screen is changed
+        - software_check_nano is changed
 
     - name: check tcpdump
       package:
