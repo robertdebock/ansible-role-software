@@ -22,7 +22,7 @@
 - name: test if item.state in software_packages is set correctly
   assert:
     that:
-      - item.name in ["present", "absent"]
+      - item.state in ["present", "absent"]
     quiet: yes
   loop: "{{ software_packages }}"
   loop_control: "{{ item.name }}"
