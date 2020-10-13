@@ -1,0 +1,9 @@
+---
+- name: test if software_packages is set correctly
+  assert:
+    that:
+      - software_packages | length > 0
+      - software_packages is iterable
+    quiet: yes
+  when:
+    - software_packages is defined

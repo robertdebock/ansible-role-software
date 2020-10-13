@@ -1,0 +1,29 @@
+---
+- name: Verify
+  hosts: all
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - role: ansible-role-software
+      software_packages:
+        - name: screen
+        - name: tcpdump
+          state: absent
+
+  post_tasks:
+    - name: check screen
+      package:
+        name: screen
+        state: present
+      register: software_check_screen
+      failed_when:
+        - software_check_screen is changed
+
+    - name: check tcpdump
+      package:
+        name: tcpdump
+        state: absent
+      register: software_check_tcpdump
+      failed_when:
+        - software_check_tcpdump is changed
