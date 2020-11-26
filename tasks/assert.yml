@@ -1,4 +1,5 @@
 ---
+
 - name: test if software_packages is set correctly
   assert:
     that:
