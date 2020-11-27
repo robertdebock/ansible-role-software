@@ -12,6 +12,7 @@
   assert:
     that:
       - item.name is defined
+      - item.name is string
     quiet: yes
   loop: "{{ software_packages }}"
   loop_control:
@@ -22,6 +23,7 @@
 - name: test if item.state in software_packages is set correctly
   assert:
     that:
+      - item.state is string
       - item.state in [ "present", "absent" ]
     quiet: yes
   loop: "{{ software_packages }}"
