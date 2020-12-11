@@ -2,9 +2,9 @@
 
 Install or uninstall software on your system.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-software.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-software)|[![github](https://github.com/robertdebock/ansible-role-software/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-software/actions)|[![quality](https://img.shields.io/ansible/quality/51260)](https://galaxy.ansible.com/robertdebock/software)|[![downloads](https://img.shields.io/ansible/role/d/51260)](https://galaxy.ansible.com/robertdebock/software)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-software.svg)](https://github.com/robertdebock/ansible-role-software/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-software.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-software)|[![github](https://github.com/robertdebock/ansible-role-software/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-software/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-software/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-software)|[![quality](https://img.shields.io/ansible/quality/51260)](https://galaxy.ansible.com/robertdebock/software)|[![downloads](https://img.shields.io/ansible/role/d/51260)](https://galaxy.ansible.com/robertdebock/software)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-software.svg)](https://github.com/robertdebock/ansible-role-software/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -50,10 +50,11 @@ These variables are set in `defaults/main.yml`:
 
 ## [Requirements](#requirements)
 
-- Access to a repository containing packages, likely on the internet.
-- A recent version of Ansible. (Tests run on the current, previous and next release of Ansible.)
+- pip packages listed in [requirements.txt](https://github.com/robertdebock/ansible-role-software/blob/master/requirements.txt).
 
 ## [Status of requirements](#status-of-requirements)
+
+The following roles are used to prepare a system. You may choose to prepare your system in another way, I have tested these roles as well.
 
 | Requirement | Travis | GitHub |
 |-------------|--------|--------|
