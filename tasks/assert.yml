@@ -1,7 +1,7 @@
 ---
 
 - name: test if software_packages is set correctly
-  assert:
+  ansible.builtin.assert:
     that:
       - software_packages is iterable
     quiet: yes
@@ -9,7 +9,7 @@
     - software_packages is defined
 
 - name: test if item.name in software_packages is set correctly
-  assert:
+  ansible.builtin.assert:
     that:
       - item.name is defined
       - item.name is string
@@ -21,7 +21,7 @@
     - software_packages is defined
 
 - name: test if item.state in software_packages is set correctly
-  assert:
+  ansible.builtin.assert:
     that:
       - item.state is string
       - item.state in [ "present", "absent" ]
