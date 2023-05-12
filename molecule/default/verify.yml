@@ -7,12 +7,12 @@
   roles:
     - role: ansible-role-software
       software_packages:
-        - name: nano
-        - name: tcpdump
+        - name: Nano
+        - name: Tcpdump
           state: absent
 
   post_tasks:
-    - name: check nano
+    - name: Check nano
       ansible.builtin.package:
         name: nano
         state: present
@@ -20,7 +20,7 @@
       failed_when:
         - software_check_nano is changed
 
-    - name: check tcpdump
+    - name: Check tcpdump
       ansible.builtin.package:
         name: tcpdump
         state: absent
