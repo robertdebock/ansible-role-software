@@ -7,8 +7,8 @@
   roles:
     - role: ansible-role-software
       software_packages:
-        - name: Nano
-        - name: Tcpdump
+        - name: nano
+        - name: tcpdump
           state: absent
 
   post_tasks:
