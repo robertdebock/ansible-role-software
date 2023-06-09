@@ -13,6 +13,7 @@
     that:
       - item.name is defined
       - item.name is string
+      - item.name is not none
     quiet: yes
   loop: "{{ software_packages }}"
   loop_control:
