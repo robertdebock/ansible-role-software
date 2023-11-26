@@ -1,4 +1,4 @@
-# Ansible role [software](#software)
+# [Ansible role software](#software)
 
 Install or uninstall software on your system.
 
