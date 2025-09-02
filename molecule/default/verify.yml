@@ -5,7 +5,7 @@
   gather_facts: true
 
   roles:
-    - role: ansible-role-software
+    - role: robertdebock.software
       software_packages:
         - name: nano
         - name: tcpdump
