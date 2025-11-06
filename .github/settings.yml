@@ -5,4 +5,4 @@
 repository:
   description: Install or uninstall software on your system.
   homepage: https://robertdebock.nl/
-  topics: software, system, ansible, molecule, tox, playbook
+  topics: software, system, ansible, molecule, playbook
